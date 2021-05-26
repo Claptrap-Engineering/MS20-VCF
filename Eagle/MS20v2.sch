@@ -21219,8 +21219,8 @@ distributor RS Components</description>
 <part name="RESDRIVE" library="adafruit" deviceset="TRIMPOT" device="TC33X" value="50K"/>
 <part name="ATRIM" library="adafruit" deviceset="TRIMPOT" device="TC33X" value="100K"/>
 <part name="FTUNE" library="adafruit" deviceset="TRIMPOT" device="TC33X" value="1K"/>
-<part name="FREQENCY" library="pot" deviceset="EVU" device="A" technology="F2" value="B50K"/>
-<part name="CVTRIM" library="pot" deviceset="EVU" device="A" technology="F2" value="A100K"/>
+<part name="FREQUENCY" library="pot" deviceset="EVU" device="A" technology="F2" value="B50K"/>
+<part name="CVTRIM" library="pot" deviceset="EVU" device="A" technology="F2" value="B100K"/>
 <part name="INVOL" library="pot" deviceset="EVU" device="A" technology="F2" value="A100K"/>
 <part name="RESONANCE" library="pot" deviceset="EVU" device="A" technology="F2" value="A100K"/>
 <part name="P-4" library="supply1" deviceset="-12V" device=""/>
@@ -21519,7 +21519,7 @@ distributor RS Components</description>
 <attribute name="NAME" x="54.991" y="135.89" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="57.15" y="135.89" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="FREQENCY" gate="G$1" x="-2.54" y="205.74" smashed="yes" grouprefs="4">
+<instance part="FREQUENCY" gate="G$1" x="-2.54" y="205.74" smashed="yes" grouprefs="4">
 <attribute name="NAME" x="-8.509" y="201.93" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-6.35" y="201.93" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -21878,7 +21878,7 @@ distributor RS Components</description>
 <pinref part="IC2" gate="A" pin="OUT"/>
 <wire x1="58.42" y1="12.7" x2="63.5" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="12.7" x2="63.5" y2="40.64" width="0.1524" layer="91" grouprefs="1"/>
+<wire x1="63.5" y1="12.7" x2="63.5" y2="40.64" width="0.1524" layer="91"/>
 <junction x="63.5" y="12.7"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="63.5" y1="-12.7" x2="63.5" y2="-5.08" width="0.1524" layer="91"/>
@@ -22063,7 +22063,7 @@ distributor RS Components</description>
 </net>
 <net name="N$40" class="0">
 <segment>
-<pinref part="FREQENCY" gate="G$1" pin="S"/>
+<pinref part="FREQUENCY" gate="G$1" pin="S"/>
 <pinref part="R25" gate="G$1" pin="2"/>
 <wire x1="2.54" y1="205.74" x2="12.7" y2="205.74" width="0.1524" layer="91" grouprefs="4"/>
 </segment>
@@ -22089,7 +22089,7 @@ distributor RS Components</description>
 </net>
 <net name="P-V" class="0">
 <segment>
-<pinref part="FREQENCY" gate="G$1" pin="A"/>
+<pinref part="FREQUENCY" gate="G$1" pin="A"/>
 <wire x1="-2.54" y1="200.66" x2="-2.54" y2="193.04" width="0.1524" layer="91" grouprefs="4"/>
 <label x="-2.54" y="193.04" size="1.778" layer="95" rot="R90" grouprefs="4"/>
 </segment>
@@ -22113,7 +22113,7 @@ distributor RS Components</description>
 </net>
 <net name="P+V" class="0">
 <segment>
-<pinref part="FREQENCY" gate="G$1" pin="E"/>
+<pinref part="FREQUENCY" gate="G$1" pin="E"/>
 <wire x1="-2.54" y1="210.82" x2="5.08" y2="210.82" width="0.1524" layer="91" grouprefs="4"/>
 <label x="5.08" y="213.36" size="1.778" layer="95" rot="R180" grouprefs="4"/>
 </segment>
