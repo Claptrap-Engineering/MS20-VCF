@@ -21164,7 +21164,6 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <part name="R26" library="rcl" deviceset="R-US_" device="R0603" value="47K"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="153CLV-0405" package3d_urn="urn:adsk.eagle:package:23397/2" value="10uf"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="153CLV-0405" package3d_urn="urn:adsk.eagle:package:23397/2" value="10uf"/>
-<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="153CLV-0405" package3d_urn="urn:adsk.eagle:package:23397/2" value="10uf"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="1nF"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="1nF"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="0.1uf"/>
@@ -21197,6 +21196,7 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <part name="D1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="DIODE" device="SOD-123" package3d_urn="urn:adsk.eagle:package:6240753/1"/>
 <part name="D2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="DIODE" device="SOD-123" package3d_urn="urn:adsk.eagle:package:6240753/1"/>
 <part name="S1" library="switch" library_urn="urn:adsk.eagle:library:380" deviceset="TL46PO" device="" package3d_urn="urn:adsk.eagle:package:27746/1"/>
+<part name="C11" library="rcl" deviceset="C-EU" device="C0603" value="0.47uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -21412,10 +21412,6 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <attribute name="NAME" x="216.535" y="184.404" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="211.709" y="184.404" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C3" gate="G$1" x="187.96" y="53.34" smashed="yes" rot="R270">
-<attribute name="NAME" x="188.595" y="52.324" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="183.769" y="52.324" size="1.778" layer="96" rot="R270"/>
-</instance>
 <instance part="C4" gate="G$1" x="63.5" y="43.18" smashed="yes" rot="R180">
 <attribute name="NAME" x="61.976" y="42.799" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="61.976" y="47.879" size="1.778" layer="96" rot="R180"/>
@@ -21532,6 +21528,10 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <instance part="S1" gate="BEF1" x="-33.02" y="73.66" smashed="yes" rot="R270">
 <attribute name="NAME" x="-35.56" y="58.42" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-35.56" y="55.88" size="1.778" layer="96"/>
+</instance>
+<instance part="C11" gate="G$1" x="185.42" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="185.039" y="54.864" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="190.119" y="54.864" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -21891,7 +21891,7 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <wire x1="172.72" y1="53.34" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="50.8" x2="172.72" y2="53.34" width="0.1524" layer="91"/>
 <junction x="172.72" y="53.34"/>
-<pinref part="C3" gate="G$1" pin="-"/>
+<pinref part="C11" gate="G$1" pin="1"/>
 <junction x="182.88" y="53.34"/>
 </segment>
 </net>
@@ -22121,10 +22121,10 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <pinref part="IC2" gate="B" pin="+IN"/>
 <wire x1="210.82" y1="53.34" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
 <label x="203.2" y="55.88" size="1.778" layer="95" rot="R90"/>
-<pinref part="C3" gate="G$1" pin="+"/>
 <wire x1="200.66" y1="53.34" x2="190.5" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="53.34" x2="200.66" y2="60.96" width="0.1524" layer="91"/>
 <junction x="200.66" y="53.34"/>
+<pinref part="C11" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="BCVIN" class="0">

@@ -3057,12 +3057,6 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="72.17" y="18.15" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="44.865" y="86.095" size="1.27" layer="27"/>
 </element>
-<element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="153CLV-0405" package3d_urn="urn:adsk.eagle:package:23397/2" value="10uf" x="47" y="52.5" smashed="yes">
-<attribute name="NAME" x="43.365" y="51.135" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="0" x="78.75" y="-17.35" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="78.75" y="-17.35" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="41.865" y="52.595" size="1.27" layer="27"/>
-</element>
 <element name="C4" library="rcl" package="C0603" value="1nF" x="35" y="62" smashed="yes">
 <attribute name="NAME" x="31.365" y="61.135" size="1.27" layer="25"/>
 <attribute name="POPULARITY" value="73" x="71.83" y="-12.93" size="1.778" layer="27" display="off"/>
@@ -3385,6 +3379,12 @@ design rules under a new name.</description>
 <attribute name="NAME" x="18.58" y="63.08" size="1.778" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="1" x="13.5" y="58" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="7.15" y="63.08" size="1.778" layer="27" rot="R270"/>
+</element>
+<element name="C11" library="rcl" package="C0603" value="0.47uF" x="50" y="52.5" smashed="yes">
+<attribute name="NAME" x="49.365" y="53.135" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="73" x="50" y="52.5" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="50" y="52.5" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="49.365" y="50.595" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -3709,9 +3709,10 @@ design rules under a new name.</description>
 <wire x1="49.095" y1="62.055" x2="49.15" y2="62" width="0.254" layer="1"/>
 <wire x1="45.1" y1="62.055" x2="45.1" y2="56.05" width="0.254" layer="1"/>
 <wire x1="45.1" y1="56.05" x2="45.15" y2="56" width="0.254" layer="1"/>
-<contactref element="C3" pad="-"/>
-<wire x1="45.15" y1="56" x2="45.15" y2="52.55" width="0.254" layer="1"/>
-<wire x1="45.15" y1="52.55" x2="45.2" y2="52.5" width="0.254" layer="1"/>
+<wire x1="45.15" y1="52.55" x2="45.15" y2="56" width="0.254" layer="1"/>
+<contactref element="C11" pad="1"/>
+<wire x1="49.15" y1="52.5" x2="45.2" y2="52.5" width="0.254" layer="1"/>
+<wire x1="45.2" y1="52.5" x2="45.15" y2="52.55" width="0.254" layer="1"/>
 </signal>
 <signal name="N$17">
 <contactref element="IC1" pad="10"/>
@@ -3924,12 +3925,12 @@ design rules under a new name.</description>
 <wire x1="47" y1="75.5" x2="45.5" y2="75.5" width="0.254" layer="16"/>
 <wire x1="45.5" y1="75.5" x2="43.77" y2="77.23" width="0.254" layer="16"/>
 <wire x1="43.77" y1="77.23" x2="43.77" y2="82" width="0.254" layer="16"/>
-<wire x1="52" y1="52.5" x2="53" y2="51.5" width="0.254" layer="1"/>
+<wire x1="53" y1="51.5" x2="52" y2="52.5" width="0.254" layer="1"/>
 <wire x1="51.5" y1="35" x2="47.5" y2="35" width="0.254" layer="1"/>
 <wire x1="53" y1="51.5" x2="53" y2="36.5" width="0.254" layer="1"/>
 <wire x1="53" y1="36.5" x2="51.5" y2="35" width="0.254" layer="1"/>
-<contactref element="C3" pad="+"/>
-<wire x1="48.8" y1="52.5" x2="52" y2="52.5" width="0.254" layer="1"/>
+<contactref element="C11" pad="2"/>
+<wire x1="52" y1="52.5" x2="50.85" y2="52.5" width="0.254" layer="1"/>
 </signal>
 <signal name="BCVIN">
 <contactref element="J2" pad="2"/>
