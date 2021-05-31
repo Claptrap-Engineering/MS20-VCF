@@ -1,4 +1,4 @@
-# MS20SMD
+# MS20-VCF
 6HP eurorack SMD version of the famous MS20 Voltage controlled filter.
 
 Based on the work of other community members as René Schmitz, Look Mum No Computer, Eddy Bergman, and many others.
